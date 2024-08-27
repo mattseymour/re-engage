@@ -10,3 +10,6 @@ dist/
 poetry.lock
 .vscode
 .python-version
+
+.venv/
+
