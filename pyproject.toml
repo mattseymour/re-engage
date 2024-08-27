@@ -1,10 +1,13 @@
 [tool.poetry]
-name = "backoff"
-version = "2.2.1"
-description = "Function decoration for backoff and retry"
-authors = ["Bob Green <rgreen@aquent.com>"]
+name = "re-engage"
+version = "1.0.0"
+description = "Function decoration for backoff and retry, this is an active fork of the original backoff library"
+authors = [
+    "Original - Bob Green <rgreen@aquent.com>",
+    "Matt Seymour <mattaseymour@gmail.com>",
+]
 readme = "README.rst"
-repository = "https://github.com/litl/backoff"
+repository = "https://github.com/mattseymour/re-engage"
 license = "MIT"
 keywords = ["retry", "backoff", "decorators"]
 classifiers = ['Development Status :: 5 - Production/Stable',
@@ -15,10 +18,11 @@ classifiers = ['Development Status :: 5 - Production/Stable',
                'Operating System :: OS Independent',
                'Programming Language :: Python',
                'Programming Language :: Python :: 3',
-               'Programming Language :: Python :: 3.7',
                'Programming Language :: Python :: 3.8',
                'Programming Language :: Python :: 3.9',
                'Programming Language :: Python :: 3.10',
+               'Programming Language :: Python :: 3.11',
+               'Programming Language :: Python :: 3.12',
                'Topic :: Internet :: WWW/HTTP',
                'Topic :: Software Development :: Libraries :: Python Modules',
                'Topic :: Utilities']
@@ -27,7 +31,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">3.8.0,<=3.13.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
