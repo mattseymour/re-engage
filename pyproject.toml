@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "re-engage"
-version = "1.0.0"
+version = "1.0.1"
 description = "Function decoration for backoff and retry, this is an active fork of the original backoff library"
 authors = [
     "Original - Bob Green <rgreen@aquent.com>",

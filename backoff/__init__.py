@@ -13,7 +13,7 @@ For examples and full documentation see the README at
 https://github.com/litl/backoff
 """
 import importlib.metadata
-__version__= importlib.metadata.version('reengage')
+__version__= importlib.metadata.version('re-engage')
 
 from backoff._decorator import on_exception, on_predicate
 from backoff._jitter import full_jitter, random_jitter
