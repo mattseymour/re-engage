@@ -12,6 +12,9 @@ polling resources for externally generated content.
 For examples and full documentation see the README at
 https://github.com/litl/backoff
 """
+import importlib.metadata
+__version__= importlib.metadata.version('reengage')
+
 from backoff._decorator import on_exception, on_predicate
 from backoff._jitter import full_jitter, random_jitter
 from backoff._wait_gen import constant, expo, fibo, runtime, decay
@@ -27,5 +30,3 @@ __all__ = [
     'full_jitter',
     'random_jitter',
 ]
-
-__version__ = "2.2.1"
